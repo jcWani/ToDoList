@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  color: #333;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #00525a, #54bac1);
+}
+
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.todo-app {
+  background: #fff;
+  width: 100%;
+  max-width: 130rem;
+  margin: 10rem auto 2rem;
+  padding: 4rem 3rem 7rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 1.2rem 2.4rem rgba(51, 51, 51, 0.3);
+}
+
+.todo-app-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+
+  color: #006a87;
+  font-size: 2.4rem;
+}
+
+.todo-app img {
+  width: 5.4rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 3.2rem;
+
+  box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.row input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 2rem;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1.6rem;
+}
+
+.row input::placeholder {
+  color: rgba(68, 68, 68, 0.606);
+}
+
+.row button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: #ff5945;
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 4rem;
+  padding: 2rem 5rem;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.row button:hover {
+  background: #b1000d;
+}
+
+.list-container li {
+  list-style: none;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  padding: 1.2rem 0.8rem 1.2rem;
+  user-select: none;
+
+  display: flex;
+  align-items: start;
+  gap: 1.2rem;
+
+  position: relative;
+}
+
+.list-container .checked {
+  color: rgba(85, 85, 85, 0.508);
+  text-decoration: line-through;
+}
+
+.list-container .btn-checked {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.list-container .btn-checked:hover {
+  background: rgba(85, 85, 85, 0.181);
+  box-shadow: 0 0 0.5rem #000;
+}
+
+.list-container .btn-remove {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+  margin-left: auto;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.list-container .btn-remove:hover {
+  box-shadow: 0 0 0.5rem #000;
+}
